@@ -11,7 +11,6 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    /* Removemos o height fixo para permitir rolagem */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,7 +30,7 @@ body {
 .container {
     width: 90%;
     max-width: 500px;
-    padding: 40px 10px; /* Espaço nas extremidades */
+    padding: 40px 10px; 
     z-index: 1;
 }
 
@@ -43,7 +42,7 @@ body {
 }
 
 .image {
-    width: 100%; /* Aumenta um pouco para preencher melhor o celular */
+    width: 100%; 
     max-width: 350px;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
@@ -67,7 +66,7 @@ h2 {
     padding: 20px;
     border-radius: 12px;
     border-left: 4px solid #a855f7;
-    text-align: left; /* Alinhamento melhor para leitura */
+    text-align: left; 
     line-height: 1.6;
 }
 
