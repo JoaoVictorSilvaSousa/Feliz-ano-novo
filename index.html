@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhor Ofendido e Senhora Chata ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <div id="particles-js"></div>
+    <script src="script.js" defer></script>
+    <div class="container">
+        
+        <div class="spotify-player">
+            <iframe id="spotify-embed"
+                src="https://open.spotify.com/intl-pt/embed/track/7MQJYm0QPF2Vf0UtzKapSc?si=8e6408d6169c4f36" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <img src="agnt.jpg" alt="Imagem do casal" class="image">
+
+        <h2>Mavis e Jhony 🫶🏻☝🏻</h2>
+
+        <p class="timer" id="contador">Carregando...</p>
+
+        <div class="text-box">
+            <p>Feliz ano novo meu amor!!</p>
+
+<p>Eu queria muito estar aí com você, mas mesmo de longe,  
+    fiz isso para tentar eternizar um pouquinho do tamanho do meu amor por você.
+    Você é, e sempre será, a minha pessoa favorita
+    no mundo. Que a gente continue escrevendo nossa história
+    lado a lado, rindo e se amando por muitos e muitos anos e não só nesse 2026. 
+    Obrigado por ser tão incrível e por fazer minha vida melhor, minha princesa.
+
+
+</p><strong>EU TE AMO!!!</strong></p>
+
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function atualizarContador() {
+            const dataInicio = new Date("2024-06-12T00:14:00");
+            const agora = new Date();
+            let diffMs = agora - dataInicio;
+
+            let segundos = Math.floor(diffMs / 1000);
+            let minutos = Math.floor(segundos / 60);
+            let horas = Math.floor(minutos / 60);
+            let dias = Math.floor(horas / 24);
+            let meses = Math.floor(dias / 30.44);
+            
+            dias = dias % 30.44;
+            horas = horas % 24;
+            minutos = minutos % 60;
+            segundos = segundos % 60;
+
+            document.getElementById("contador").innerHTML = 
+                `${meses} meses, ${Math.floor(dias)} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
+        }
+
+        setInterval(atualizarContador, 1000);
+        atualizarContador();
+    </script>
+</body>
+</html>
